@@ -25,7 +25,7 @@
 				<a class="nav-item nav-link active" href="#top">Home <span class="sr-only">(current)</span></a>
 				<a class="nav-item nav-link" href="#competences">Compétences</a>
 				<a class="nav-item nav-link" href="#loisirs">Loisirs</a>
-				<a class="nav-item nav-link" href="#">Contact</a>
+				<a class="nav-item nav-link" href="#contact">Contact</a>
 			</div>
 		</div>
 	</div>
@@ -70,7 +70,8 @@
 	<h3 style="margin-top: 50px">Informations Personnels</h3>
 	<hr>
 	<div class="row mb-3">
-		<div class="col col-lg-4 col-md-4 col-sm-12" style="display: flex; justify-content: center"><img src="https://via.placeholder.com/240x240" alt="photo"></div>
+		<div class="col col-lg-4 col-md-4 col-sm-12" style="display: flex; justify-content: center"><img
+				src="https://via.placeholder.com/240x240" alt="photo"></div>
 		<div class="col col-lg-8 col-md-8 col-sm-12 p-4 pl-lg-5 pl-md-5 pl-sm-5"
 			 style="min-height: 240px; display: flex; flex-direction: column; justify-content: space-evenly">
 			<div class="row">
@@ -97,7 +98,7 @@
 	<h3 id="competences" style="margin-top: 50px">Compétences</h3>
 	<hr>
 	<div class="row mb-3">
-		<div class="col col-md-4 col-sm-12" style="display: flex; justify-content: center">
+		<div class="col col-md-4 col-sm-12 p-3" style="display: flex; justify-content: center">
 			<div class="card" style="width: 90%; min-height: 200px;display: flex; justify-content: center">
 				<img class="card-img-top"
 					 src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F1%2F10%2FCSS3_and_HTML5_logos_and_wordmarks.svg%2F1280px-CSS3_and_HTML5_logos_and_wordmarks.svg.png&f=1&nofb=1"
@@ -105,7 +106,7 @@
 					 style="padding: 20px">
 			</div>
 		</div>
-		<div class="col col-md-4 col-sm-12" style="display: flex; justify-content: center">
+		<div class="col col-md-4 col-sm-12 p-3" style="display: flex; justify-content: center">
 			<div class="card" style="width: 90%; min-height: 150px;display: flex; justify-content: center">
 				<img class="card-img-top"
 					 src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1280px-Node.js_logo.svg.png"
@@ -113,7 +114,7 @@
 					 style="padding: 20px">
 			</div>
 		</div>
-		<div class="col col-md-4 col-sm-12" style="display: flex; justify-content: center">
+		<div class="col col-md-4 col-sm-12 p-3" style="display: flex; justify-content: center">
 			<div class="card" style="width: 90%; min-height: 200px;display: flex; justify-content: center">
 				<img class="card-img-top"
 					 src="https://download.logo.wine/logo/C%2B%2B/C%2B%2B-Logo.wine.png"
@@ -125,15 +126,56 @@
 	<h3 id="loisirs" style="margin-top: 50px">Loisirs</h3>
 	<hr>
 	<div class="row mb-3" style="display: flex; justify-content: center;">
-		<div class="col col-lg-5 col-md-5 col-sm-12 m-2" style="display: flex; justify-content: center; min-height: 300px">
+		<div class="col col-lg-5 col-md-5 col-sm-12 m-2"
+			 style="display: flex; justify-content: center; min-height: 300px">
 			<iframe width="100%"
 					src="https://www.youtube.com/embed/NpEaa2P7qZI?autoplay=1&mute=1&loop=1&controls=0">
 			</iframe>
 		</div>
-		<div class="col col-lg-5  col-md-5 col-sm-12 m-2" style="display: flex; justify-content: center; min-height: 300px">
+		<div class="col col-lg-5  col-md-5 col-sm-12 m-2"
+			 style="display: flex; justify-content: center; min-height: 300px">
 			<iframe width="100%"
 					src="https://www.youtube.com/embed/NpEaa2P7qZI?autoplay=1&mute=1&loop=1&controls=0">
 			</iframe>
+		</div>
+	</div>
+</div>
+<div class="container-fluid mt-5 bg-dark">
+	<div class="container">
+		<div class="row">
+			<div class="mapouter col-lg-6 col-md-12 col-sm-12 p-5"
+				 style="display:flex; justify-content: center;min-height: 300px">
+				<div class="gmap_canvas" style="width: 100%">
+					<iframe id="gmap_canvas" style="height: 100%; width: 100%"
+							src="https://maps.google.com/maps?q=enset%20mohammedia&t=&z=13&ie=UTF8&iwloc=&output=embed">
+					</iframe>
+				</div>
+			</div>
+			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 p-5">
+				<h3 id="contact">Contact</h3>
+				<hr>
+				<form>
+					<div class="form-group row">
+						<label for="email" class="col-sm-2 col-form-label">Email</label>
+						<div class="col-sm-10">
+							<input type="text" id="email" class="form-control">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="objet" class="col-sm-2 col-form-label">Objet</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="objet">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="message">Message</label>
+						<textarea class="form-control" id="message" rows="5"></textarea>
+					</div>
+					<div style="display: flex; justify-content: center">
+						<button type="submit" class="btn btn-primary" style="width: 80%">Envoyer</button>
+					</div>
+				</form>
+			</div>
 		</div>
 	</div>
 </div>
